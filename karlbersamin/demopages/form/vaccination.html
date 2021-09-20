@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>COVID-19 Vaccination Form</title>
+        <!--stylesheet-->
+        <link href="vaccination.css" rel="stylesheet">
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+        <div class="heading-bar">
+        <h1>COVID 19 Vaccination Form</h1>
+        </div>
+    </header>
+
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Optional image background
+        <div class="image" style="background-image: url('vaccine-bg.jpeg');"></style>
+        -->
+        <div class="container">
+        <form action="results.html" method="GET"></form>
+        <form>
+            <div>
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" placeholder="Full Name" required>
+            </div>
+
+            <br>
+
+            <div>
+            <label for="age">Age</label>
+            <input name="age" type="number" id="age" placeholder="69" min="1" max="200" required>
+            </div>
+
+            <br>
+
+            <div>
+                Gender
+                <br>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="Male" required>
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="Female" required>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="birthdate">Birthdate</label>
+                <input name="birthdate" type="date" id="birthdate" required>
+            </div>
+
+            <br>
+            
+            <div>
+                <label for="job">Occupation</label>
+                <input name="job" type="text" id="job" placeholder="Occupation/Job" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="address">Address</label>
+                <input name="address" type="text" id="address" placeholder="Full Address" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="num">Contact Number</label>
+                <input name="num" type="tel" id="contact-number" maxlength="11" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="vaccine-preference">Vaccine Preference</label>
+                <select name="vaccine-preference" id="vaccine=pref" required>
+                    <option value="none">---</option>
+                    <option value="Pfizer-BioNTech">Pfizer-BioNTech</option>
+                    <option value="Moderna">Moderna</option>
+                    <option value="Johnson&Johnson">Johnson & Johnson</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <br>
+                Medical History
+                <br>
+                <br>
+                <div>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="medhist" id="yes" onclick="showText(0)" required checked>
+                </div>
+                <div id="if-yes">
+                    <br>
+                    <label for="if-yes">Please Specify</label>
+                    <input type="text" name="if-yes" id="yes-text" required>
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" name="medhist" id="no" onclick="showText(1)" required>
+                </div>
+
+                <div id="space">
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <br>
+
+            <script type="text/javascript">
+                function showText(num){
+                    if(num==0)
+                    document.getElementById('if-yes').style.display='block';
+
+                    else
+
+                    document.getElementById('if-yes').style.display='none';
+
+                    return;
+                }
+            </script>
+
+            <div class="clear-button">
+            <button type="reset">Clear</button>
+            </div>
+
+            <div class="submit-button">
+            <button type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    </body>
+    </html>
+
