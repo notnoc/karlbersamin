@@ -1,0 +1,40 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    text-align: center;
+    color:whitesmoke;
+    background-color: darkslategrey;
+    overflow: hidden;
+}
+
+header {
+    text-align: left;
+    position: fixed;
+}
+
+.heading-bar{
+    background-color:lightseagreen;
+    width: 1515px;
+    height: 10px;
+    padding: 1px;
+}
+
+.clear-button {
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+
+.container {
+    background-color:slategray;
+    padding: 25px;
+    border-radius: 5%;
+    max-width: 600px;
+    margin-left: 435px;
+}

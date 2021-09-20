@@ -1,0 +1,76 @@
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0;
+}
+
+
+.titletribute {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    position: fixed;
+}
+
+.image {
+    position: fixed;
+    margin-left: 515px;
+    margin-right: auto;
+    margin-bottom: 650px;
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.content h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+#horowitz {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0;
+    right: 0;
+    left: 0;
+}
+
+.bgm {
+    color:blanchedalmond;
+    transition: .5s ease;
+}
+
+.bgm:hover p {
+    position: absolute;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.chop {
+    border-radius: 50px;
+    margin-right: 750px;
+}
+
+.image a {
+    display: block;
+    height: 100px;
+    width: 100px;
+}
